@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,20 +39,20 @@
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
     
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
-    
+     <!-- <script src="/staticfiles/landing_page_gen/render.js"></script>   -->
     <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script> 
 </head>
 
 <body>
 
-
-
 <div class = "flex w-full flex-col">  
-    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    
+
+<div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5BTCY4TZ905BURDK8Q5K7DHBSXNSINXNLAAU3TCJ.jpeg" alt="Top Notch Landscaping Services logo"> </a>
+        <a href= " index "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5BTCY4TZ905BURDK8Q5K7DHBSXNSINXNLAAU3TCJ.jpeg" alt="Top Notch Landscaping Services logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -60,46 +61,36 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-end ">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-center ">
     
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="#about">About Us
+    href="index">About Us
 </a>
       
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="#services">Our Services
+    href="services">Our Services
 </a>
-     
+ 
       
+        
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="#our-work">Our Best Work
+    href="gallery">Our Best Work
 </a>
-     
+ 
+      
            
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="#testimonials">Testimonials &amp; Reviews
+    href="testimonials">Testimonials &amp; Reviews
 </a>
  
-         
-      
-<a 
-    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="#faqs">Faqs
-</a>
-     
-      
-<a 
-    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="#find-us">Service Areas
-</a>
-   
+              
     
   
 
@@ -143,6 +134,8 @@
     </nav>
   </div>
 </div>
+
+
     <section   style= "background-color:#31403d"  
 class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto pt-12 mt-12">
     <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
@@ -415,494 +408,211 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
+        
+ 
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
+        
+<button 
+ 
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#31403d' "
+    onMouseOut="this.style.backgroundColor='#6ca83e'; this.style.color='white'"
+    style="background-color:#6ca83e; color:white"               
+
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
+
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900 z-30">
+    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
+</button>
+
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+            onMouseOver="this.style.backgroundColor='#31403d'; this.style.color='#6ca83e' "
+            onMouseOut="this.style.backgroundColor='#6ca83e'; this.style.color='white'"
+            style="background-color:#6ca83e; color:white"               
+
+         
+        onclick= "send_sms(2, 'Top-Notch-Landscaping-Services')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+    </div>
+
+    
     
     <section  style= "background-color:#31403d"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-900 border-0 border-gray-200 text-white border-solid ">
-        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24  mt-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                 Our Services
             </h2>
             <h2  style= "color:#6ca83e"  class="w-full lg:pr-9 max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
-                What we are best at  - expert  landscaping &amp; hardscaping 
-                
+                <!-- What we are best at  - expert  landscaping &amp; hardscaping  -->
+                We provide a variety of landscaping &amp; hardscaping services!
             </h2>
 
             <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
 
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Mulch Installation</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                Mulch is used to help maintain the health of your landscape and adds a professional touch to any planter. It can be placed over soil to lock in moisture and improve soil conditions to encourage a healthier lawn. We provide a variety of professional mulching services.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Debris Cleanup</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Weed Control</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                We can get rid of the most common weeds in your lawn. Weed control is key to overall health of your lawn and important to not overlook for long term health.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Mowing</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Shrub Trimming</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                Shrub trimming can transform your property. Our experienced landscapers will rid your home overgrowth and keep your shrubs looking immaculate.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Sod Layouts</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Flower Bed Installation</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                Flower beds are a great way spruce up any yard! They help define a bring some beauty and color to any property. We have a variety of designs that can be built.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Driveway & Sidewalk Cleaning</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Debris Cleanup</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                From tree debris to general yard debris we have the equipment to haul away unwanted materials. We will ensure your lawn is not cluttered with unwanted debris.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Leaf Raking & Bagging</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Mowing</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                A big part of lawn maintenance is ensuring your lawn is regularly mowed. We know life gets busy, and we are here to help keep your lawn looking fresh.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Mulch Installation</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Sod Layouts</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                Nothing makes for a better yard than new sod to restart the fresh green look of a property. We offer partial yard and full yard sod layouts.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Weed Control</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Driveway & Sidewalk Cleaning</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                A clean driveway and sidewalk set the impression for your home. We'll remove algae and dirt buildup and leave your driveway better looking than it ever before.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Shrub Trimming</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
-                            <h3  style= "color:#6ca83e"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Leaf Raking & Bagging</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                When the time of year comes for leaves to fall, we are here to ensure your beautiful lawn continues to shine through. We have the equipment and experience to leave your lawn spotless.
-                            </p>
+                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-gray-200 ">
+                        <a href= "services">
+                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-gray-200">
+                                    
+                        <div  class="font-sans text-center border-gray-200 flex justify-left">
+                            <i  style="color:#6ca83e"  class="fas fa-check-square fa-3x pl-5 pr-5 text-gray-400"></i>
+                            <!-- <i  style="color:#6ca83e"  class="fal fa-check fa-3x pl-5 pr-5 text-gray-400"></i> -->
+                            <div style="display:flex; justify-content: center; align-items:center">
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Flower Bed Installation</h3>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>        
             
             </div>
         </div>
     </section>
+    <!-- </a> -->
+
     
-    
-    
-    
-
-    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
-        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-            <h2  style= "color:#31403d" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
-            <h2  style= "color:#6ca83e" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/6SL85T95MQUYLQ9XUKUSTOLGZJJFVGA431KM8M3A.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/I7P3YDFSQZIUBV3J7HB32CYVBGFMIED6ZA80LQOP.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/HNBDE1GKKOCBHKXMW78SKVPPBEKBZKBH0YO9HQSD.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/KJ02EF0SWI2PEUJ3IV54NX5UO2C2I3SWFN27IVOK.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/BFIO2XK0WJ71OTAZ16MDNWU1HQ9Y9WMQLS6D0NOX.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/AZDU8GX0WUI1CSWX3NMD3JL1QI8ZQ2CAVEO7J5U9.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/TI4QM1CEABC18P8QIBG65FWZZT17AE54RV6KLNJH.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ZH1ZELUEC8EG81SST0GVPM8P59C9D3IKPT0I1GK7.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/2W7V0E8EA5THGZDHKRNM2UY7EUTAQ1XC9MKWDIY0.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ECJK6MYEBJKWGFFRKXFDXFH364ZF89NY5RF4QOEJ.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/75BZ1KUPPD6IEYSUU9F2FD7EFOQT42D05PA03NOO.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/3KY5Q79TH18XHWWINL2IUKRA8N7X833FEZ1Y9A0H.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/D2P9TWO4333NKIZ443HGXG2SPH41SCKVQ62ILC5U.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ULW6UD1Y5LETR3KVUT9OKUQVOX0Q15MANPBW8258.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/7V95EAZDY2DF5XYB5ZYH3N3RL0EMPTETSR9Z5HG8.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6SL85T95MQUYLQ9XUKUSTOLGZJJFVGA431KM8M3A.jpeg"  alt = "Photo number 1 of Top Notch Landscaping Services&#x27;s best work performing a Shrub Trimming job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/I7P3YDFSQZIUBV3J7HB32CYVBGFMIED6ZA80LQOP.jpeg"  alt = "Photo number 2 of Top Notch Landscaping Services&#x27;s best work performing a Leaf Raking &amp; Bagging job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/HNBDE1GKKOCBHKXMW78SKVPPBEKBZKBH0YO9HQSD.jpeg"  alt = "Photo number 3 of Top Notch Landscaping Services&#x27;s best work performing a Flower Bed Installation job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/KJ02EF0SWI2PEUJ3IV54NX5UO2C2I3SWFN27IVOK.jpeg"  alt = "Photo number 4 of Top Notch Landscaping Services&#x27;s best work performing a Flower Bed Installation job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/BFIO2XK0WJ71OTAZ16MDNWU1HQ9Y9WMQLS6D0NOX.jpeg"  alt = "Photo number 5 of Top Notch Landscaping Services&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/AZDU8GX0WUI1CSWX3NMD3JL1QI8ZQ2CAVEO7J5U9.jpeg"  alt = "Photo number 6 of Top Notch Landscaping Services&#x27;s best work performing a Debris Cleanup job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/TI4QM1CEABC18P8QIBG65FWZZT17AE54RV6KLNJH.jpeg"  alt = "Photo number 7 of Top Notch Landscaping Services&#x27;s best work performing a Leaf Raking &amp; Bagging job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ZH1ZELUEC8EG81SST0GVPM8P59C9D3IKPT0I1GK7.jpeg"  alt = "Photo number 8 of Top Notch Landscaping Services&#x27;s best work performing a Leaf Raking &amp; Bagging job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2W7V0E8EA5THGZDHKRNM2UY7EUTAQ1XC9MKWDIY0.jpeg"  alt = "Photo number 9 of Top Notch Landscaping Services&#x27;s best work performing a Flower Bed Installation job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ECJK6MYEBJKWGFFRKXFDXFH364ZF89NY5RF4QOEJ.jpeg"  alt = "Photo number 10 of Top Notch Landscaping Services&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/75BZ1KUPPD6IEYSUU9F2FD7EFOQT42D05PA03NOO.jpeg"  alt = "Photo number 11 of Top Notch Landscaping Services&#x27;s best work performing a Debris Cleanup job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3KY5Q79TH18XHWWINL2IUKRA8N7X833FEZ1Y9A0H.jpeg"  alt = "Photo number 12 of Top Notch Landscaping Services&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/D2P9TWO4333NKIZ443HGXG2SPH41SCKVQ62ILC5U.jpeg"  alt = "Photo number 13 of Top Notch Landscaping Services&#x27;s best work performing a Flower Bed Installation job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ULW6UD1Y5LETR3KVUT9OKUQVOX0Q15MANPBW8258.jpeg"  alt = "Photo number 14 of Top Notch Landscaping Services&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7V95EAZDY2DF5XYB5ZYH3N3RL0EMPTETSR9Z5HG8.jpeg"  alt = "Photo number 15 of Top Notch Landscaping Services&#x27;s best work performing a Debris Cleanup job"   loading="lazy" ></div>
-                    
-                 
-                                    
-        
-                <div class="z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" >
-
-
-                
-                
-                    <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
-                    <button
-                     style= "background-color:#6ca83e" 
-                            class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-gray-400"                                
-                            @click="open = false">
-                         <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
-                    </button>
-                    </div>
-
-                    <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
-
-                        <template  x-for="(slide, index, collection) in slides" :key="index">
-                            <div class="h-full w-full flex items-center justify-center absolute">
-                                <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
-                                    x-show="activeSlide === index" 
-                                    x-transition:enter="transition ease-out duration-150"
-                                    x-transition:enter-start="opacity-0 transform scale-90"
-                                    x-transition:enter-end="opacity-100 transform scale-100"
-                                    x-transition:leave="transition ease-in duration-150"
-                                    x-transition:leave-start="opacity-100 transform scale-100"
-                                    x-transition:leave-end="opacity-0 transform scale-90">
-
-                                    <template x-if="slide[1] === 'photo' ">
-                                        <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
-                                    </template>
-                                    
-                                    <template x-if="slide[1] != 'photo'  ">
-                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
-                                        </video>
-                                    </template> 
-                                    
-                                </div>
-                                <div  style= "color:#6ca83e"  class="fixed text-gray-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
-                                    x-show="activeSlide === index">
-                                    <span class="w-12 text-right" x-text="index + 1"></span>
-                                    <span class="w-4 text-center">/</span>
-                                    <span class="w-12 text-left" x-text="slides.length"></span>
-                                </div>
-                            </div>
-                        </template>
-
-                    <div class="fixed md:fixed z-50 absolute bottom-1/4 md:bottom-0 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center" @click.away="open = false">
-                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
-                        <button 
-                                type="button"
-                                 style= "background-color:#6ca83e" 
-                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-gray-400" 
-                               
-                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
-                                <span class = "text-white"> <i class="fas fa-lg fa-chevron-left"></i> </span>
-                           
-                        </button>
-                        </div>
-                        <div class="flex items-center justify-start w-12 md:ml-16">
-                        <button 
-                                type="button"
-                                 style= "background-color:#6ca83e" 
-                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-gray-400   "
-                               
-                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
-                           <span class = "text-white"> <i class="fas fa-lg fa-chevron-right"></i> </span>
-                        </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            </div>
-        </div>     
-
-            
-</div>
-        
-    
-    
-    <div  style= "background-color:#31403d"  id= "testimonials" class=" flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
-        <div class="px-16 ">
-            <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
-                <div class = "sm:mb-4 md:mb-0">
-                <h2  style= "color:#6ca83e"  class="relative flex  text-gray-400 text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</h2>
-                </div>
-
-
-                <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center ">
-                    
-                    Testimonials &amp; Reviews</h2>
-                <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
-                
-                
-
-                <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-white  ">Richard Benjamin</h3>
-                            <h3 class=" text-white ">Umatilla, FL  , Mowing  </h3>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Tim is the best in the business, all around very professional and stand up guy."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-white  ">Robert Gregg</h3>
-                            <h3 class=" text-white ">Midway, TX  , Mowing  </h3>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"I would highly recommend top notch that is exactly what they are always on time top notch, attention to detail top notch, professional top notch and great work top-notch. the name fits give these guys a call. A+ work"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-white  ">Edbert Smith</h3>
-                            <h3 class=" text-white ">Umatilla, FL  , Flower Bed Installation  </h3>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Awesome guy to be around and gets the work done quick. By far the best rates in the area and wouldn't give my business to anyone else. Give him a call!"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-white  ">Kasandra Kern</h3>
-                            <h3 class=" text-white ">Midway, TX  , Mowing  </h3>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Thank you for taking care of us! Great quality work and attention to detail. I highly recommend."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-                </div>  
-                
-                <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
-                
-                <a target= "_blank" href="https://www.facebook.com/TopNotchLandscapingServices/reviews/"  class="w-full">
-                    <button  
-                onMouseOver="this.style.backgroundColor='white'; this.style.color='#31403d' "
-                onMouseOut="this.style.backgroundColor='#6ca83e'; this.style.color='white'"
-                style="background-color:#6ca83e; color:white"               
-                
-                   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
-                            <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
-                    </button>
-                </a>
-                
-             
-                
-            </div>
-
-                         
-
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-<section id= "faqs" class="py-16   bg-white text-gray-900  md:py-20 lg:py-24">
-    <div class="max-w-5xl px-12 mx-auto xl:px-0">
-
-        <h2  style= "color:#31403d"  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h2>
-         <h2  style= "color:#6ca83e"  class="my-3 mb-10  text-xl font-medium  text-gray-400 text-center">Your questions answered</h2>
-
-        <div class="relative mt-12 space-y-3">
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
-                <h3  
-                onMouseOver="this.style.color='#6ca83e' "
-                onMouseOut=" this.style.color='#31403d'"
-                style="color:#31403d;"               
-                
-                                 
-                @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-400  lg:text-left">
-                    <span class = "flex text-left lg:text-left">What is the best way to get a quote?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p  style= "color:#31403d"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-gray-900 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>The best way to get in touch is to call or text (941) 447-8597. We provide personal attention to every customer.</p>
-            </div>
-
-        
-
-        </div>
-    </div>
-</section>
 
     
 
@@ -939,8 +649,9 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 </section>
 
 
+    
 
-    <section  style= "background-color:#31403d"   class="py-10 bg-gray-900">
+<section  style= "background-color:#31403d"   class="py-10 bg-gray-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-gray-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
@@ -966,7 +677,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
             </ul>
         </div>
     </div>
-</section>     
+</section> 
 </div> 
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
